@@ -196,11 +196,3 @@ void play()
   Serial.println("Game Over");
   gameOver(score);
 }
-
-void renderScene(int16_t i=0){
-  display.drawBitmap(10, 29, dino1, 25, 26, SSD1306_WHITE);
-  display.drawBitmap(50, TREE_Y, tree1, 11, 23, SSD1306_WHITE);
-  display.drawBitmap(100, TREE_Y, tree2, 22, 23, SSD1306_WHITE);
-  display.drawLine(0, 54, 127, 54, SSD1306_WHITE);
-  display.drawPixel(i, 60, SSD1306_WHITE);
-}
